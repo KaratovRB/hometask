@@ -1,0 +1,78 @@
+номер 1(1)
+a=input("Name : ")
+b=int(input("Age :"))
+date=((2019-b)+100)
+print(a + " will be 100 years old in  " + str(date))
+номер 3(2)
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = []
+c = int(input("enter a number : "))
+for i in a:
+ if i<c:
+  b.append(i)
+print(b)
+номер 8(3)
+import sys
+
+user1 = input("Player 1 name  ")
+user2 = input("Player 2 name   ")
+answer1 = input("%s,choose weapon   " % user1)
+answer2 = input("%s,choose weapon   " % user2)
+
+def game(a,b):
+    if a == b:
+        return("draw")
+    elif a == 'rock':
+        if b == 'scissors':
+            return("rock wins")
+        else:
+            return("paper wins")
+    elif a == 'scissors':
+        if b == 'paper':
+            return("scissors win")
+        else:
+            return("rock wins")
+    elif a== 'paper':
+        if b == 'rock':
+            return("paper wins")
+        else:
+            return("scissors win")
+    else:
+        return("invalid data")
+        sys.exit()
+
+print(game(answer1, answer2))
+print("Do you wanna play another game?")
+
+
+номер4(2)
+num = input('Enter a number')
+divList = []
+for i in range(1,num/2 + 1):
+    if num%i == 0 :
+        divList.append(i)
+print divList
+номер5(2)
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+new_list = []
+
+for i in a and b:
+    if i in a and b:
+        new_list.append(i)
+
+print(new_list)
+номер6(2)
+word = (input('word:\n'))
+word=str(word)
+
+def reverse(word):
+ x =' '
+ x=str(x)
+ for i in range(len(word)):
+  x=x+word[len(word)-1-i]
+ print(x)
+ if x == word:
+  print('This is a Palindrome')
+ else:print('This is NOT a Palindrome')
+reverse(word)
